@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   body {
+    /* background-color: #000; */
+   }
+   .container {
+    padding: 0 10%;
+   }
+   .form-container {
+    width: 40%;
+    display: none;
+    margin: 40px auto;
+    border: 2px solid #eee;
+    padding: 3px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px #ddd, 0 0 50px #eee;
+    animation: animate 1.4s;
+   }
+   form {
+    background-color: #f3f3f3;
+    padding: 16px;
+    border-radius: 4px;
+    position: relative;
+   }
+   .img-container {
+    text-align: center;
+   }
+   .img-container img {
+    width: 40%;
+    border-radius: 50%;
+   }
+   .close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.3s;
+   }
+   .close-btn:hover {
+    transform: scale(1.3);
+    color: red;
+   }
+   form div {
+    margin: 20px 0;
+   }
+    label {
+    display: inline-block;
+    margin: 8px 0;
+    font-weight: 700;
+   }
+    input[type=text], input[type=password] {
+    display: block;
+    border: none;
+    background-color: #fff;
+    padding: 12px 16px;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 4px;
+   }
+   input:focus {
+    box-shadow: 0 0 6px cadetblue;
+    outline: none;
+    background-color: #fff;
+   }
+   .btn {
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+   }
+   .login {
+    width: 100%;
+    background-image: linear-gradient(45deg,#8bda8b, #da9191);
+   }
+   .cancel {
+    background-color: red;
+    color: #fff;
+   }
+   .forget-pword-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+   .login:hover, .cancel:hover {
+    opacity: 1;
+  }
+    
+   @keyframes animate {
+    from {transform: scaleX(0);}
+    to {transform: scaleX(1);}
+   }
+
+  @media screen and (max-width: 1000px) {
+       .form-container {
+         width: 80%;
+       }
+  }
+   @media screen and (max-width: 600px) {
+        .form-container {
+          width: 100%;
+        }
+       .forget-pword-container {
+        flex-direction: column;
+        
+       }
+       .forget-pword-container p {
+        margin-top: 8px;
+       }
+   }

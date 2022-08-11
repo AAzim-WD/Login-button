@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title> 
+   <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+ 
+   <div class="container">
+    <h1>Login Form</h1>
+    <button id="show" type="button" class="login btn"><h2>Login</h2></button>
+     
+     <div id="myForm" class="form-container">
+      <form action="">
+        <div class="img-container">
+          <img src="/images/AAzim.jpg" alt="pic" width="300px">
+          <span id="cancel-1" class="close-btn">&times;</span>
+        </div>
+        <div>
+          <label for="uname">Username</label>
+          <input type="text" name="username" id="uname" placeholder="Enter username">
+        </div>
+        <div>
+          <label for="pword">Password</label>
+          <input type="password" name="pword" id="pword" placeholder="Enter email">
+        </div>
+        <div>
+          <input type="checkbox" name="checkme" id="checkme">
+          <label for="checkme" style="margin-left: 6px;">Remember me</label>
+        </div>
+
+        <button type="button" class="login btn">Login</button>
+
+        <div class="forget-pword-container">
+          <button id="cancel-2" type="button" class="cancel btn">Cancel</button>
+          <p class="forget-pword" style="color: red;">Forget <a href="#" style="color: tomato;">Password?</a></p>
+      </div>
+      </form>
+     </div>
+   </div>
+       
+<script src="index.js"></script>
+</body>
+</html>
